@@ -4,8 +4,8 @@ import React from 'react';
 // export default should be added
 export default function From() {
     return ( 
-        <>
-        <span > My Form </span> 
+        <>  
+            <span > My Form </span> 
         </>
     );
 };
