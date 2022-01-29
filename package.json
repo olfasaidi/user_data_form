@@ -2,6 +2,17 @@
   "name": "user_data_form",
   "version": "0.1.0",
   "private": true,
+  "author": {
+	"name": "Olfa",
+	"url": "https://github.com/olfasaidi"
+  },
+  "contributors": [
+	{
+		"name": "Fernando Toledo",
+		"email": "fernandotoledo23@gmail.com",
+		"url": "https://github.com/fToledo29"
+	}
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
