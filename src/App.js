@@ -1,6 +1,7 @@
 import './App.css';
 import UserFrom from './components/UserForm/UserFrom';
 
+
 function App() {
 
 	return (
@@ -8,12 +9,18 @@ function App() {
 			<UserFrom
 				name="Olfa"
 				lastName="Saidi"
-				country="Tunisia"></UserFrom>
+				country="Tunisia"
+				email="saidiolfa86@gmail.com"
+				Username="Foufa"
+				gender="femmmel or homme"
+				adress=" City 18 january"
+				birthDate="03/03/1997"
+				city="Ariana"
+				state=""
+				zip="2041"
+				></UserFrom>
 
-			<UserFrom
-				name="Fernando"
-				lastName="Toledo"
-				country="Mexico"></UserFrom>
+			 
 
 		</div>
 	);
