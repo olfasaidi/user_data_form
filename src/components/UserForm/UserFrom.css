@@ -14,3 +14,17 @@
     width: 10%;
     margin-bottom: 3rem;
 }
+
+.inputStyle {
+    border-radius: 17px;
+    width: 100%;
+    height: 26px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.labelStyle {
+    font-size: 15px;
+    font-weight: 600;
+    color: darkblue;
+}

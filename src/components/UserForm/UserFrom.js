@@ -1,53 +1,92 @@
 import './UserFrom.css';
+import { Button, Form } from 'react-bootstrap';
+
 
 export default function UserFrom(props) {
     return (
-        <div className='user-form'>
-            <div className='uf-field'>
-                <label>Name:</label>
-                <span>{props.name}</span>
-            </div>
-            <div className='uf-field'>
-                <label>Last Name:</label>
-                <span>{props.lastName}</span>
-            </div>
-            <div className='uf-field'>
-                <label>Country:</label>
-                <span>{props.country}</span>
-            </div>
-            <div className='uf-field'>
-                <label>Email:</label>
-                <span>{props.email}</span>
-            </div>
-            <div className='uf-field'>
-                <label>User Name:</label>
-                <span>{props.Username}</span>
-            </div>
-            <div className='uf-field'>
-                <label>Gender:</label>
-                <span>{props.gender}</span>
-            </div>
+        <Form className='user-form'>
+            <Form.Group className="mb-3  ">
 
-            <div className='uf-field'>
-                <label>Adress:</label>
-                <span>{props.adress}</span>
-            </div>
-            <div className='uf-field'>
-                <label>DAte of Birth:</label>
-                <span>{props.birthDate}</span>
-            </div>
-            <div className='uf-field'>
-                <label>City:</label>
-                <span>{props.city}</span>
-            </div>
-            <div className='uf-field'>
-                <label>State:</label>
-                <span>{props.state}</span>
-            </div>
-            <div className='uf-field'>
-                <label>Zip Code:</label>
-                <span>{props.zip}</span>
-            </div>
+                <Form.Label className='labelStyle' >Name</Form.Label>
+
+                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+
+            </Form.Group>
+            <Form.Group className="mb-3">
+
+                <Form.Label className='labelStyle' >lastName</Form.Label>
+
+                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+
+            </Form.Group>
+            <Form.Group className="mb-3">
+
+                <Form.Label className='labelStyle' >Country</Form.Label>
+
+                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+
+            </Form.Group>
+            <Form.Group className="mb-3">
+
+                <Form.Label className='labelStyle' >Email</Form.Label>
+
+                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+
+            </Form.Group>
+            <Form.Group className="mb-3">
+
+                <Form.Label className='labelStyle' >Username</Form.Label>
+
+                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+
+            </Form.Group>
+
+            {['checkbox', 'radio'].map((type) => (
+                <div key={`inline-${type}`} className="mb-3">
+                    <Form.Check
+                        
+                        label="female "
+                        type={type}
+                        id={`inline-${type}-3`}
+                    />
+                </div>
+            ))}
+
+            <Form.Group className="mb-3">
+
+                <Form.Label className='labelStyle' >Adress</Form.Label>
+
+                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+
+            </Form.Group>
+            <Form.Group className="mb-3">
+
+                <Form.Label className='labelStyle' >DateOfBirth</Form.Label>
+
+                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+
+            </Form.Group>
+            <Form.Group className="mb-3">
+
+                <Form.Label className='labelStyle' >City</Form.Label>
+
+                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+
+            </Form.Group>
+            <Form.Group className="mb-3">
+
+                <Form.Label className='labelStyle' >State</Form.Label>
+
+                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+
+            </Form.Group>
+            <Form.Group className="mb-3">
+
+                <Form.Label className='labelStyle' >Zip Code</Form.Label>
+
+                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+
+            </Form.Group>
             {/* 
 				Add this new fields to the component:
 				// Email:
@@ -59,6 +98,6 @@ export default function UserFrom(props) {
 				// State:
 				// Zip code:
 			 */}
-        </div>
+        </Form>
     );
 }
