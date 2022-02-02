@@ -1,93 +1,97 @@
 import './UserFrom.css';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form, Row } from 'react-bootstrap';
+
 
 
 export default function UserFrom(props) {
     return (
-        <Form className='user-form'>
-            <Form.Group className="mb-3  ">
+        <container >
+            <Row className="justify-content-md-center">
+              
+                <Form className='user-form'>
+                    <Form.Group className="mb-3  ">
 
-                <Form.Label className='labelStyle' >Name</Form.Label>
+                        <Form.Label className='labelStyle' >Name</Form.Label>
 
-                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+                        <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
 
-            </Form.Group>
-            <Form.Group className="mb-3">
+                    </Form.Group>
+                    <Form.Group className="mb-3">
 
-                <Form.Label className='labelStyle' >lastName</Form.Label>
+                        <Form.Label className='labelStyle' >lastName</Form.Label>
 
-                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+                        <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
 
-            </Form.Group>
-            <Form.Group className="mb-3">
+                    </Form.Group>
+                    <Form.Group className="mb-3">
 
-                <Form.Label className='labelStyle' >Country</Form.Label>
+                        <Form.Label className='labelStyle' >Country</Form.Label>
 
-                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+                        <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
 
-            </Form.Group>
-            <Form.Group className="mb-3">
+                    </Form.Group>
+                    <Form.Group className="mb-3">
 
-                <Form.Label className='labelStyle' >Email</Form.Label>
+                        <Form.Label className='labelStyle' >Email</Form.Label>
 
-                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+                        <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
 
-            </Form.Group>
-            <Form.Group className="mb-3">
+                    </Form.Group>
+                    <Form.Group className="mb-3">
 
-                <Form.Label className='labelStyle' >Username</Form.Label>
+                        <Form.Label className='labelStyle' >Username</Form.Label>
 
-                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+                        <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
 
-            </Form.Group>
+                    </Form.Group>
 
-            {['checkbox', 'radio'].map((type) => (
-                <div key={`inline-${type}`} className="mb-3">
-                    <Form.Check
-                        
-                        label="female "
-                        type={type}
-                        id={`inline-${type}-3`}
-                    />
-                </div>
-            ))}
+                    {['checkbox', 'radio'].map((type) => (
+                        <div key={`inline-${type}`} className="mb-3">
+                            <Form.Check
 
-            <Form.Group className="mb-3">
+                                label="female "
+                                type={type}
+                                id={`inline-${type}-3`}
+                            />
+                        </div>
+                    ))}
 
-                <Form.Label className='labelStyle' >Adress</Form.Label>
+                    <Form.Group className="mb-3">
 
-                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+                        <Form.Label className='labelStyle' >Adress</Form.Label>
 
-            </Form.Group>
-            <Form.Group className="mb-3">
+                        <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
 
-                <Form.Label className='labelStyle' >DateOfBirth</Form.Label>
+                    </Form.Group>
+                    <Form.Group className="mb-3">
 
-                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+                        <Form.Label className='labelStyle' >DateOfBirth</Form.Label>
 
-            </Form.Group>
-            <Form.Group className="mb-3">
+                        <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
 
-                <Form.Label className='labelStyle' >City</Form.Label>
+                    </Form.Group>
+                    <Form.Group className="mb-3">
 
-                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+                        <Form.Label className='labelStyle' >City</Form.Label>
 
-            </Form.Group>
-            <Form.Group className="mb-3">
+                        <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
 
-                <Form.Label className='labelStyle' >State</Form.Label>
+                    </Form.Group>
+                    <Form.Group className="mb-3">
 
-                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+                        <Form.Label className='labelStyle' >State</Form.Label>
 
-            </Form.Group>
-            <Form.Group className="mb-3">
+                        <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
 
-                <Form.Label className='labelStyle' >Zip Code</Form.Label>
+                    </Form.Group>
+                    <Form.Group className="mb-3">
 
-                <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+                        <Form.Label className='labelStyle' >Zip Code</Form.Label>
 
-            </Form.Group>
-            {/* 
+                        <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+
+                    </Form.Group>
+                    {/* 
 				Add this new fields to the component:
 				// Email:
 				// User Name:
@@ -98,6 +102,8 @@ export default function UserFrom(props) {
 				// State:
 				// Zip code:
 			 */}
-        </Form>
+                </Form>
+            </Row>
+        </container>
     );
 }
