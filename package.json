@@ -3,21 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "author": {
-	"name": "Olfa",
-	"url": "https://github.com/olfasaidi"
+    "name": "Olfa",
+    "url": "https://github.com/olfasaidi"
   },
   "contributors": [
-	{
-		"name": "Fernando Toledo",
-		"email": "fernandotoledo23@gmail.com",
-		"url": "https://github.com/fToledo29"
-	}
+    {
+      "name": "Fernando Toledo",
+      "email": "fernandotoledo23@gmail.com",
+      "url": "https://github.com/fToledo29"
+    }
   ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.1.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.4"
