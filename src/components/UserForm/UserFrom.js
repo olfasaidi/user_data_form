@@ -1,97 +1,103 @@
 import './UserFrom.css';
-import { Button, Form, Row } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 
 export default function UserFrom(props) {
-	return (
-		<>
-			<Form className='user-form'>
+    return (
+        <div className='user-form-container'>
+            <Form className='user-form'>
 
-				<Form.Group className="mb-3">
+                <Form.Group className="user-form-group mb-3">
 
-					<Form.Label className='labelStyle' >Name</Form.Label>
+			<Form.Group className="user-form-field-3 mb-3">
+				<Form.Label className='user-form-label labelStyle' >Name</Form.Label>
 
-					<Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+				<Form.Control className='user-form-input inputStyle' type="text" placeholder="Type Name" />
+			</Form.Group>
 
-				</Form.Group>
-				<Form.Group className="mb-3">
+			<Form.Group className="user-form-field-3 mb-3">
+				<Form.Label className='user-form-label labelStyle' >lastName</Form.Label>
 
-					<Form.Label className='labelStyle' >lastName</Form.Label>
+				<Form.Control className='user-form-input inputStyle' type="text" placeholder="Type Name" />
+			</Form.Group>
 
-					<Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+			<Form.Group className="user-form-field-3 mb-3">
 
-				</Form.Group>
-				<Form.Group className="mb-3">
+				<Form.Label className='user-form-label labelStyle' >DateOfBirth</Form.Label>
 
-					<Form.Label className='labelStyle' >Country</Form.Label>
+				<Form.Control className='user-form-input inputStyle' type="text" placeholder="Type Name" />
 
-					<Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+			</Form.Group>
 
-				</Form.Group>
-				<Form.Group className="mb-3">
+                </Form.Group>
 
-					<Form.Label className='labelStyle' >Email</Form.Label>
+		<Form.Group className="user-form-group mb-3">
+			<Form.Group className="user-form-field-2 mb-3">
 
-					<Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+				<Form.Label className='user-form-label labelStyle' >Username</Form.Label>
 
-				</Form.Group>
-				<Form.Group className="mb-3">
+				<Form.Control className='user-form-input inputStyle' type="text" placeholder="Type Name" />
 
-					<Form.Label className='labelStyle' >Username</Form.Label>
+			</Form.Group>
 
-					<Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+			<Form.Group className="user-form-field-2 mb-3">
 
-				</Form.Group>
-				<Form.Group className="mb-3">
+				<Form.Label className='user-form-label labelStyle' >Email</Form.Label>
 
-					{['radio', 'radio'].map((type) => (
-						<div key={`inline-${type}`} className="mb-3">
-							<Form.Check
+				<Form.Control className='user-form-input inputStyle' type="text" placeholder="Type Name" />
 
-								label="female "
-								type={type}
-								id={`inline-${type}-3`}
-							/>
-						</div>
-					))}
-				</Form.Group>
-				<Form.Group className="mb-3">
+			</Form.Group>
+		</Form.Group>
 
-					<Form.Label className='labelStyle' >Adress</Form.Label>
+                <Form.Group className="user-form-field-1 mb-3">
 
-					<Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+                    <Form.Label className='labelStyle'> Gender</Form.Label>
+                    <Form.Check name='gender' type="radio" label="male" inline />
+                    <Form.Check name='gender' type="radio" label="female" inline />
 
-				</Form.Group>
-				<Form.Group className="mb-3">
+                </Form.Group>
 
-					<Form.Label className='labelStyle' >DateOfBirth</Form.Label>
+		{/* ### Modify below here ### */}
 
-					<Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+		<Form.Group className="mb-3">
+			<Form.Label className='user-form-label labelStyle' >Country</Form.Label>
 
-				</Form.Group>
-				<Form.Group className="mb-3">
+			<Form.Control className='user-form-input inputStyle' type="text" placeholder="Type Name" />
+		</Form.Group>
 
-					<Form.Label className='labelStyle' >City</Form.Label>
+                <Form.Group className="mb-3">
 
-					<Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+                    <Form.Label className='labelStyle' >Address</Form.Label>
 
-				</Form.Group>
-				<Form.Group className="mb-3">
+                    <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
 
-					<Form.Label className='labelStyle' >State</Form.Label>
+                </Form.Group>
 
-					<Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+                <Form.Group className="mb-3">
 
-				</Form.Group>
-				<Form.Group className="mb-3">
+                    <Form.Label className='labelStyle' >City</Form.Label>
 
-					<Form.Label className='labelStyle' >Zip Code</Form.Label>
+                    <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
 
-					<Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+                </Form.Group>
 
-				</Form.Group>
-			*/}
-			</Form>
-			<Button> Submit</Button>
-		</>
-	);
+                <Form.Group className="mb-3">
+
+                    <Form.Label className='labelStyle' >State</Form.Label>
+
+                    <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+
+                </Form.Group>
+
+                <Form.Group className="mb-3">
+
+                    <Form.Label className='labelStyle' >Zip Code</Form.Label>
+
+                    <Form.Control className='inputStyle' type="text" placeholder="Type Name" />
+
+                </Form.Group>
+
+            </Form>
+            <Button> Submit</Button>
+        </div>
+    );
 }

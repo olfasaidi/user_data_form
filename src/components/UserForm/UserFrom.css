@@ -17,7 +17,7 @@
 
 .inputStyle {
     border-radius: 17px;
-    width: 100%;
+    /* width: 100%; */
     height: 26px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -27,4 +27,37 @@
     font-size: 15px;
     font-weight: 600;
     color: darkblue;
+}
+
+.user-form-container {
+	width: 75vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+.user-form {
+	width: 100%;
+}
+.user-form-group {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.user-form-field-3 {
+	width: calc(100% / 3);
+	text-align: left;
+}
+
+.user-form-field-1 {
+	display: flex;
+	margin: 1rem 0;
+}
+
+.user-form-field-2 {
+	width: calc(100% / 2);
+	text-align: left;
+}
+
+.user-form-input, .user-form-label {
+	width: 95%;
 }
