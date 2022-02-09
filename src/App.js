@@ -20,19 +20,7 @@ function App() {
 				zip="2041"
 				></UserFrom>
 
-			<UserFrom
-				name="Fernando"
-				lastName="Toledo"
-				country="Mexico"
-				email="fernandotoledo@gmail.com"
-				Username="ftoledo"
-				gender="male"
-				adress="Tufton 470"
-				birthDate="01/23"
-				city="Asheville"
-				state="NC"
-				zip="2800"
-				></UserFrom>
+	
 
 			 
 
