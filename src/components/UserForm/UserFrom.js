@@ -59,9 +59,20 @@ export default function UserFrom(props) {
                         <Form.Control className='user-form-input inputStyle' type="text" placeholder=" Type city" />
                     </Form.Group>
 
-                    <Form.Group className="user-form-field-3 mb-3">
+                    {/* <Form.Group className="user-form-field-3 mb-3">
                         <Form.Label className='user-form-label labelStyle' >State</Form.Label>
                         <Form.Control className='user-form-input inputStyle' type="text" placeholder="  choose" />
+                    </Form.Group> */}
+
+                    <Form.Group className="user-form-field-3 mb-3">
+                        <Form.Label className='user-form-label labelStyle' >State</Form.Label>
+
+                        <Form.Select className='user-form-input inputStyle' size="lg" >
+                            <option>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </Form.Select>
                     </Form.Group>
 
                     <Form.Group className="user-form-field-3 mb-3">
@@ -72,12 +83,12 @@ export default function UserFrom(props) {
                 </Form.Group>
                 <hr></hr>
 
-                <Button  className='buttonS' variant="secondary">close</Button>{' '}
+                <Button className='buttonS' variant="secondary">close</Button>{' '}
                 <Button className='buttonS' variant="secondary">Save changes</Button>{' '}
 
 
             </Form>
-           
+
         </div>
     );
 }
