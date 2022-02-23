@@ -1,12 +1,29 @@
+import { useState } from 'react';
 import './App.css';
+import FromComponent from './components/Form/Form';
+import User from './components/User/User';
 import UserFrom from './components/UserForm/UserFrom';
 
 
 function App() {
 
+	const [stateOk, updateState] = useState(false);
+
+	const modify = () => {
+		updateState(true);
+	}
+
+
 	return (
 		<div className="App">
-			<UserFrom
+			<button onClick={modify}>Change</button>
+
+			<br />
+			<br />
+
+			{stateOk ? <FromComponent /> :
+			
+			 <UserFrom
 				name="Olfa"
 				lastName="Saidi"
 				country="Tunisia"
@@ -18,7 +35,13 @@ function App() {
 				city="Ariana"
 				state=""
 				zip="2041"
-				></UserFrom>
+				></UserFrom>}
+
+
+			<br />
+			<br />
+
+			
 
 	
 
