@@ -65,13 +65,13 @@ export default function UserFrom(props) {
                     </Form.Group> */}
 
                     <Form.Group className="user-form-field-3 mb-3">
-                        <Form.Label className='user-form-label labelStyle' >State</Form.Label>
+                        <Form.Label className='user-form-label labelStyle ' >State</Form.Label>
 
                         <Form.Select className='user-form-input inputStyle' size="lg" >
-                            <option>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option>  Type state</option>
+                            <option value="1">ARIANA</option>
+                            <option value="2">Tunis</option>
+                            <option value="3">Hammamet</option>
                         </Form.Select>
                     </Form.Group>
 
