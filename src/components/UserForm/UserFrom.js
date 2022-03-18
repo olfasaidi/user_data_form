@@ -19,41 +19,40 @@ export default function UserForm(props) {
 
 
 
-	const upUpdateFirstName= (firstNameValue) =>{
+	const onUpdateFirstName= (firstNameValue) =>{
 		setFirstName(firstNameValue)
 	}
 
-	const upUpdateLastName =(lastNameValue) =>{
+	const onUpdateLastName =(lastNameValue) =>{
 		setLastName(lastNameValue)
 	}
 
-	const upUpdateDateOfBirth = (dateOfBirthValue) =>{
+	const onUpdateDateOfBirth = (dateOfBirthValue) =>{
 		setDateOfBirth(dateOfBirthValue)
 	}
 
-	const upUpdateUserName = (userNameValue) => {
+	const onUpdateUserName = (userNameValue) => {
 		setUserName(userNameValue)
 	}
 
 	const onUpdateEmail = (emailVal) => {
 		setEmail(emailVal);
 	}
-	const upUpdateCountry =(countryValue) =>{
+	const onUpdateCountry =(countryValue) =>{
 		setCoutry(countryValue)
 	}
 	const onUpdateAdress =(adressValue) =>{
 		setAdress(adressValue)
 	}
-	const upUpdateCity =(cityVal) =>{
+	const onUpdateCity =(cityVal) =>{
 		setCity(cityVal)
 	}
 	
-	const upUpdateState =(stateValue) =>{
+	const onUpdateState =(stateValue) =>{
 		setState(stateValue)
 	}
 
-
-	const upUpdateZip = (zipValue) =>{
+	const onUpdateZip = (zipValue) =>{
 		setZip(zipValue)
 	}
 
@@ -80,7 +79,7 @@ export default function UserForm(props) {
 					<Form.Group className="user-form-field-3 mb-3">
 						<Form.Label className='user-form-label labelStyle' >FistName</Form.Label>
 						<Form.Control
-							onChange={e => upUpdateFirstName(e.target.value)}
+							onChange={e => onUpdateFirstName(e.target.value)}
 							value={firstName}
 							className='user-form-input inputStyle' 
 							type="text" placeholder=" Type Email" />
@@ -89,17 +88,20 @@ export default function UserForm(props) {
 					<Form.Group className="user-form-field-3 mb-3">
 						<Form.Label className='user-form-label labelStyle' >Lastname</Form.Label>
 						<Form.Control
-							onChange={e => upUpdateLastName(e.target.value)}
+							onChange={e => onUpdateLastName(e.target.value)}
 							value={lastName}
-							className='user-form-input inputStyle' type="text" placeholder="  name@example.com" />
+							className='user-form-input inputStyle'
+							type="text"
+							placeholder="name@example.com" />
 					</Form.Group>
 
 					<Form.Group className="user-form-field-3 mb-3">
 						<Form.Label className='user-form-label labelStyle' >Date of Birth</Form.Label>
 						<Form.Control
-						        onchange={e => upUpdateDateOfBirth(e.target.value)}
+						        onchange={e => onUpdateDateOfBirth(e.target.value)}
 							value={dateOfBirth}
-						        className='user-form-input inputStyle' type="date" placeholder=" Type date" />
+						        className='user-form-input inputStyle'
+							type="date" placeholder=" Type date" />
 					</Form.Group>
 
 				</Form.Group>
@@ -109,7 +111,7 @@ export default function UserForm(props) {
 					<Form.Group className="user-form-field-3 mb-3">
 						<Form.Label className='user-form-label labelStyle' >Username</Form.Label>
 						<Form.Control
-							onChange={e => upUpdateUserName(e.target.value)}
+							onChange={e => onUpdateUserName(e.target.value)}
 							value={userName}
 							className='user-form-input inputStyle' 
 							type="text" placeholder=" Type Email" />
@@ -120,10 +122,9 @@ export default function UserForm(props) {
 						<Form.Control
 							onChange={e => onUpdateEmail(e.target.value)}
 							value={email}
-							className='user-form-input inputStyle' type="text" placeholder="  name@example.com" />
+							className='user-form-input inputStyle'
+							type="text" placeholder="name@example.com" />
 					</Form.Group>
-
-					
 
 				</Form.Group>
 
@@ -135,16 +136,17 @@ export default function UserForm(props) {
 
 				</Form.Group>
 
-				{/* ### Modify below here ### */}
-
 				<Form.Group className=" user-form-group  mb-3">
 
 					<Form.Group className="user-form-field-2 mb-3">
 						<Form.Label className='user-form-label labelStyle' >Country</Form.Label>
 						<Form.Control 
-						onchange={e => upUpdateCountry(e.target.value)}
+						onchange={e => onUpdateCountry(e.target.value)}
 						value={country}
-						id="countID" className='user-form-input inputStyle' type="text" placeholder=" Type country" />
+						id="countID"
+						className='user-form-input inputStyle'
+						type="text"
+						placeholder=" Type country" />
 					</Form.Group>
 
 					<Form.Group className="user-form-field-2 mb-3">
@@ -152,7 +154,9 @@ export default function UserForm(props) {
 						<Form.Control
 						onchange={e => onUpdateAdress(e.target.value)}
 						value={adress} 
-						className='user-form-input inputStyle' type="text" placeholder=" Type address" />
+						className='user-form-input inputStyle'
+						type="text"
+						placeholder=" Type address" />
 					</Form.Group>
 
 				</Form.Group>
@@ -164,21 +168,18 @@ export default function UserForm(props) {
 					<Form.Group className="user-form-field-3 mb-3">
 						<Form.Label className='user-form-label labelStyle' >City</Form.Label>
 						<Form.Control 
-						onchage={e => upUpdateCity(e.target.value)}
+						onchage={e => onUpdateCity(e.target.value)}
 						value={city}
-						className='user-form-input inputStyle' type="text" placeholder=" Type city" />
+						className='user-form-input inputStyle'
+						type="text"
+						placeholder=" Type city" />
 					</Form.Group>
-
-					{/* <Form.Group className="user-form-field-3 mb-3">
-			<Form.Label className='user-form-label labelStyle' >State</Form.Label>
-			<Form.Control className='user-form-input inputStyle' type="text" placeholder="  choose" />
-			</Form.Group> */}
 
 					<Form.Group className="user-form-field-3 mb-3">
 						<Form.Label className='user-form-label labelStyle' >State</Form.Label>
 
 						<Form.Select
-						onchage={e => upUpdateState(e.target.value)}
+						onchage={e => onUpdateState(e.target.value)}
 						value={state}
 						 className='user-form-input inputStyle' size="lg" >
 							<option>Open this select menu</option>
@@ -189,11 +190,13 @@ export default function UserForm(props) {
 					</Form.Group>
 
 					<Form.Group className="user-form-field-3 mb-3">
-						<Form.Label className='user-form-label labelStyle' > Zip </Form.Label>
+						<Form.Label className='user-form-label labelStyle'> Zip </Form.Label>
 						<Form.Control
-						onchage={e => upUpdateZip(e.target.value)}
+						onchage={e => onUpdateZip(e.target.value)}
 						value={zip} 
-						className='user-form-input inputStyle' type="text" placeholder=" Type zip" />
+						className='user-form-input inputStyle'
+						type="text"
+						placeholder="Type zip" />
 					</Form.Group>
 
 				</Form.Group>
